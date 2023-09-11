@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22G90" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="PokemonSpeciesEntity" representedClassName="PokemonSpeciesEntity" syncable="YES">
+        <attribute name="displayNames" optional="YES" attributeType="Transformable" customClassName="[String: String]"/>
+        <attribute name="height" attributeType="Integer 64" defaultValueString="-1" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="-1" usesScalarValueType="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="URI"/>
+        <attribute name="isLoaded" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="pokedexEntryText" optional="YES" attributeType="String"/>
+        <attribute name="weight" attributeType="Integer 64" defaultValueString="-1" usesScalarValueType="YES"/>
+        <relationship name="types" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="PokemonTypeEntity"/>
+    </entity>
+    <entity name="PokemonTypeEntity" representedClassName="PokemonTypeEntity" syncable="YES">
+        <attribute name="displayNames" optional="YES" attributeType="Transformable" customClassName="[String: String]"/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="-1" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+    </entity>
+</model>
