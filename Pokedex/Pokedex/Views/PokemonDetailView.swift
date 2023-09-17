@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PokemonDetailView: View {
-    @StateObject var pokemon: PokemonSpeciesDetails
+    @ObservedObject var pokemon: PokemonSpeciesDetails
     
     var body: some View {
         HStack {

@@ -12,7 +12,7 @@ struct PokemonListView: View {
     @StateObject var pokemonList: PokemonSpeciesList
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView {
                 LazyVStack(alignment: .center) {
                     ForEach(Array(pokemonList.list.enumerated()), id: \.element) { index, pokemon in
